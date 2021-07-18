@@ -1,0 +1,349 @@
+
+
+  <!doctype html>
+  <html lang="en">
+    <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      
+      <title>iCoder-Heaven For Coders!!</title>
+    </head>
+    <body style="background-color: rgb(228, 228, 228);">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-preview fixed-top">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">iCoder</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle" 
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Topics
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Technology</a></li>
+                  <li><a class="dropdown-item" href="#">Web Development</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Android Development</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">UI/UX</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact us</a>
+              </li>
+              
+              
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success " type="submit">Search</button>
+             
+             
+            </form>
+            <div class="mx-2">
+              <button class="btn btn-danger"  data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+              <button class="btn btn-danger"  data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
+            </div>
+          
+          </div>
+        
+      </nav>
+
+      <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal login -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Login to iCoder</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="container container--mini">
+<form name="loginform" id="loginform" action="https://themes.getbootstrap.com/wp-login.php" method="post">
+
+<div class="form-group">
+<label for="user_login">Email</label>
+<input type="text" name="log" id="user_login" class="form-control" value="" size="20">
+</div>
+<div class="form-group">
+<label for="user_pass">Password</label>
+<a class="form-sublink" href="https://themes.getbootstrap.com/my-account/lost-password/">Forgot password?</a>
+<input type="password" name="pwd" id="user_pass" class="form-control" value="" size="20">
+</div>
+
+<p class="login-remember"><label><input name="rememberme" type="checkbox" id="rememberme" value="forever"> Remember Me</label></p>
+<div class="form-group">
+<input type="submit" name="wp-submit" id="wp-submit" class="btn btn-brand btn-block mb-4" value="Sign In">
+<input type="hidden" name="redirect_to" value="https://themes.getbootstrap.com/my-account/">
+</div>
+
+</form>
+<p class="small text-center text-gray-soft">Don't have an account yet? <a href="https://themes.getbootstrap.com/my-account/">Sign up</a></p>
+</div>
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal sign up -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupModalLabel">SignUp to iCoder</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="container container--xs">
+<div class="woocommerce">
+
+
+
+<div id="signup_div_wrapper">
+
+<h1 class="mb-1 text-center">Sign up</h1>
+<p class="fs-14 text-gray text-center mb-5">Redownload themes, get support, and review themes.</p>
+
+
+<form method="post" class="register">
+
+<p class="woocommerce-FormRow woocommerce-FormRow--first form-row form-row-first">
+<label for="reg_sr_firstname">First Name <span class="required">*</span></label>
+<input type="text" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="sr_firstname" id="reg_sr_firstname" value="" required="">
+<div class="invalid-feedback">This field is required</div></p>
+
+<p class="woocommerce-FormRow woocommerce-FormRow--last form-row form-row-last">
+<label for="reg_sr_lastname">Last Name <span class="required">*</span></label>
+<input type="text" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="sr_lastname" id="reg_sr_lastname" value="" required="">
+<div class="invalid-feedback">This field is required</div></p>
+
+
+<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+<label for="reg_email">Email address <span class="required">*</span></label>
+<input type="email" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="email" id="reg_email" value="" required="">
+<div class="invalid-feedback">This field is required</div></p>
+
+
+<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+<label for="reg_password">Password <span class="required">*</span></label>
+<input type="password" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="password" id="reg_password" required="">
+<div class="invalid-feedback">This field is required</div></p>
+
+
+<!-- Spam Trap -->
+<div style="left: -999em; position: absolute;"><label for="trap">Anti-spam</label><input type="text" name="email_2" id="trap" tabindex="-1" autocomplete="off"></div>
+
+
+
+
+<p class="form-row form-row-wide mailchimp-newsletter"><input class="woocommerce-form__input woocommerce-form__input-checkbox input-checkbox" id="mailchimp_woocommerce_newsletter" type="checkbox" name="mailchimp_woocommerce_newsletter" value="1" checked="checked"> <label for="mailchimp_woocommerce_newsletter" class="woocommerce-form__label woocommerce-form__label-for-checkbox inline"><span>Subscribe for Sales &amp; New Themes</span></label><div class="invalid-feedback">This field is required</div></p><div class="clear"></div><div class="woocommerce-privacy-policy-text"></div>
+<p class="woocomerce-FormRow form-row">
+<input type="hidden" id="woocommerce-register-nonce" name="woocommerce-register-nonce" value="1693b2b976"><input type="hidden" name="_wp_http_referer" value="/my-account/">            <input type="submit" class="btn btn-brand btn-block btn-lg mb-4 mt-3" style="margin:0;" name="register" value="Sign Up">
+<div class="invalid-feedback">This field is required</div></p>
+
+
+</form>
+
+<p class="text-gray-soft text-center small mb-2">By clicking "Sign up" you agree to our <a href="https://themes.getbootstrap.com/terms">Terms of Service</a>.</p>
+<p class="text-gray-soft text-center small mb-2">Already have an account? <a href="https://themes.getbootstrap.com/signin/">Sign in</a></p>
+<p class="text-gray-soft text-center small">Trying to sign up to sell themes? <a href="https://themes.getbootstrap.com/sell/">Apply to be a seller.</a></p>
+
+</div>
+</div>
+</div>
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Button trigger modal -->
+
+      <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active ">
+            <img src="33.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Welcome to iCoder</h5>
+              <p>Technology news, Blogs, Tutorials and Tech-Events.</p>
+              <button class="btn btn-danger">Technology</button>
+              <button class="btn btn-primary">Web Developement</button>
+              <button class="btn btn-success">Android Developement</button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="11.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>The Best Coding Blog</h5>
+                <p>Technology news, Blogs, Tutorials and Tech-Events.</p>
+                <button class="btn btn-danger">Technology</button>
+                <button class="btn btn-primary">Web Developement</button>
+                <button class="btn btn-success">Android Developement</button>
+              </div>
+            </div>
+          
+          <div class="carousel-item">
+            <img src="22.jpg" class="d-block w-100 b-100" alt="..." >
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Award winning Blogs</h5>
+                <p>Technology news, Blogs, Tutorials and Tech-Events.</p>
+                <button class="btn btn-danger">Technology</button>
+                <button class="btn btn-primary">Web Developement</button>
+                <button class="btn btn-success">Android Developement</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="container my-4">
+      <div class="container px-4 py-5" id="featured-3">
+        <h2 class="pb-2 border-bottom">Columns with icons</h2>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+          <div class="feature col">
+            <div class="feature-icon bg-primary bg-gradient">
+               <img src="https://source.unsplash.com/380x50/?nature,water" alt="">
+            </div>
+  <h3>Global Conferences</h3>
+            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+            <a href="#" class="icon-link">
+              Call to action
+              <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+          </div>
+          <div class="feature col">
+            <div class="feature-icon bg-primary bg-gradient">
+                <img src="https://source.unsplash.com/380x50/?nature,water" alt="">
+            </div>
+            
+            <h3>Tech Events</h3>
+            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+            <a href="#" class="icon-link">
+              Call to action
+              <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+          </div>
+          <div class="feature col">
+            <div class="feature-icon bg-primary bg-gradient">
+                <img src="https://source.unsplash.com/380x50/?nature,water" alt="">
+            </div>
+            <h3>Top Mentors</h3>
+            <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+            <a href="#" class="icon-link">
+              Call to action
+              <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+            </a>
+          </div>
+        </div>
+        </div>
+    </div>
+   
+    <section class="bg-secondary py-5 my-4">
+      <div class="container py-3 py-lg-4">
+        <div class="row align-items-center">
+          <div class="col-xl-4 col-lg-5 pb-4 pb-lg-0">
+            <h2 class="text-light"><span class="fw-light">Complete</span> E-Commerce Front-End <span class="fw-light">Solution</span></h2>
+            <p class="text-light opacity-70">All you need for your next e-commerce project</p>
+            <ul class="text-light list-unstyled pt-3">
+              <li><i class="ci-check-circle text-success me-2"></i>Shop Grid / List Layout Options</li>
+              <li><i class="ci-check-circle text-success me-2"></i>Multiple Product Page Variations</li>
+              <li><i class="ci-check-circle text-success me-2"></i>Complete Order Workflow: Cart + Checkout</li>
+              <li><i class="ci-check-circle text-success me-2"></i>Shop Customer Account Pages</li>
+              <li><i class="ci-check-circle text-success me-2"></i>Vendor Dashboard for Multi-vendor Marketplaces</li>
+              <li><i class="ci-check-circle text-success me-2"></i>Ready for any Content: Fashion, Electronics, Digital (Downloadable) Products, etc.</li>
+              <li><i class="ci-check-circle text-success me-2"></i>Blog Pages: Blog Layouts + Single Post</li>
+              <li><i class="ci-check-circle text-success me-2"></i>Help Center / Support Pages</li>
+              <li><i class="ci-check-circle text-success me-2"></i>Secondary Pages: About, Contacts, 404, etc.</li>
+              <li><i class="ci-check-circle text-success me-2"></i>40+ Flexible Components</li>
+            </ul>
+          </div>
+          <div class="col-lg-7 offset-xl-1"><img src="pages-showcase.jpg" alt="Cartzilla pages"></div>
+        </div>
+      </div>
+    </section>
+    <nav class="navbar  navbar-expand-sm navbar-dark bg-dark ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">iCoder,Inc</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Privacy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Terms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">@ 2020-2021</a>
+            </li>
+           
+             
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
