@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="appointment.html">
+    <title>ReZyme Contact</title>
+  </head>
+  <body>
+    <style>html{margin-top:0 !important;}</style>
+
+     
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light mx-5">
+        <div class="container-fluid">
+            <img src="icon.jpg" alt="" height="60" width="60">
+          <a class="navbar-brand" href="index.html" style="font-weight: bolder;">ReZyme</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+               
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="index.html" >Home </a>
+              </li>
+              <p>     <br>  </p>
+              <li class="nav-item">
+                <a class="nav-link" href="testimonial.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="testi.html">Testimonial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html" style="color: #24AC7C;"><u>About</u> </a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="contact.html" >Contact </a>
+              </li>
+              
+              
+            </ul>
+
+            <div class="mx-2">
+              <button class="btn btn-seco"  data-bs-toggle="modal" data-bs-target="#loginModal" style="color: rgb(126, 126, 126);">Login</button>
+              <button class="btn btn-seco"  data-bs-toggle="modal" data-bs-target="#signupModal" style="color: rgb(126, 126, 126);">Register</button>
+            </div>
+          
+          </div>
+        
+      </nav>
+
+    
+
+<!-- Modal login -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Login to ReZyme</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="container container--mini">
+<form name="loginform" id="loginform" action="https://themes.getbootstrap.com/wp-login.php" method="post">
+
+<div class="form-group">
+<label for="user_login">Email</label>
+<input type="text" name="log" id="user_login" class="form-control" value="" size="20">
+</div>
+<div class="form-group">
+<label for="user_pass">Password</label>
+<a class="form-sublink" href="https://themes.getbootstrap.com/my-account/lost-password/">Forgot password?</a>
+<input type="password" name="pwd" id="user_pass" class="form-control" value="" size="20">
+</div>
+
+<p class="login-remember"><label><input name="rememberme" type="checkbox" id="rememberme" value="forever"> Remember Me</label></p>
+<div class="form-group">
+<input type="submit" name="wp-submit" id="wp-submit" class="btn btn-brand btn-block mb-4" value="Sign In">
+<input type="hidden" name="redirect_to" value="https://themes.getbootstrap.com/my-account/">
+</div>
+
+</form>
+<p class="small text-center text-gray-soft"  data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2">Don't have an account yet? <a href="https://themes.getbootstrap.com/my-account/">Sign up</a></p>
+</div>
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal sign up -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupModalLabel">SignUp to ReZyme</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="container container--xs">
+<div class="woocommerce">
+
+
+
+<div id="signup_div_wrapper">
+
+<h1 class="mb-1 text-center">Sign up</h1>
+<p class="fs-14 text-gray text-center mb-5">Redownload themes, get support, and review themes.</p>
+
+
+<form method="post" class="register">
+
+<p class="woocommerce-FormRow woocommerce-FormRow--first form-row form-row-first">
+<label for="reg_sr_firstname">First Name <span class="required">*</span></label>
+<input type="text" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="sr_firstname" id="reg_sr_firstname" value="" required="">
+<div class="invalid-feedback">This field is required</div></p>
+
+<p class="woocommerce-FormRow woocommerce-FormRow--last form-row form-row-last">
+<label for="reg_sr_lastname">Last Name <span class="required">*</span></label>
+<input type="text" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="sr_lastname" id="reg_sr_lastname" value="" required="">
+<div class="invalid-feedback">This field is required</div></p>
+
+
+<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+<label for="reg_email">Email address <span class="required">*</span></label>
+<input type="email" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="email" id="reg_email" value="" required="">
+<div class="invalid-feedback">This field is required</div></p>
+
+
+<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+<label for="reg_password">Password <span class="required">*</span></label>
+<input type="password" class="woocommerce-Input woocommerce-Input--text input-text form-control" name="password" id="reg_password" required="">
+<div class="invalid-feedback">This field is required</div></p>
+
+
+<!-- Spam Trap -->
+<div style="left: -999em; position: absolute;"><label for="trap">Anti-spam</label><input type="text" name="email_2" id="trap" tabindex="-1" autocomplete="off"></div>
+
+
+
+
+<p class="form-row form-row-wide mailchimp-newsletter"><input class="woocommerce-form__input woocommerce-form__input-checkbox input-checkbox" id="mailchimp_woocommerce_newsletter" type="checkbox" name="mailchimp_woocommerce_newsletter" value="1" checked="checked"> <label for="mailchimp_woocommerce_newsletter" class="woocommerce-form__label woocommerce-form__label-for-checkbox inline"><span>Subscribe for Sales &amp; New Themes</span></label><div class="invalid-feedback">This field is required</div></p>
+<div class="clear"></div>
+<div class="woocommerce-privacy-policy-text"></div>
+<p class="woocomerce-FormRow form-row">
+  
+<input type="hidden" id="woocommerce-register-nonce" name="woocommerce-register-nonce" value="1693b2b976" ><input type="hidden" name="_wp_http_referer" value="/my-account/">            <input type="submit"  class="btn btn-brand btn-block btn-lg mb-4 mt-3" style="margin:0;" name="register" value="Sign Up" s>
+<div class="invalid-feedback">This field is required</div></p>
+
+
+</form>
+
+<p class="text-gray-soft text-center small mb-2">By clicking "Sign up" you agree to our <a href="https://themes.getbootstrap.com/terms">Terms of Service</a>.</p>
+<p class="text-gray-soft text-center small mb-2">Already have an account? <a href="https://themes.getbootstrap.com/signin/">Sign in</a></p>
+<p class="text-gray-soft text-center small">Trying to sign up to sell themes? <a href="https://themes.getbootstrap.com/sell/">Apply to be a seller.</a></p>
+
+</div>
+</div>
+</div>
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Button trigger modal -->
+
+      <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        
+          </div>
+        </div>
+      </nav>
+       
+      
+            <div class="container my-5">
+                <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+                  <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+                    <h1 class="display-4 fw-bold lh-1">Founder & CEO</h1>
+                    <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+                     <a href="https://www.udemy.com/user/sahil-pachlore/"> <button type="button" class="btn  btn-lg px-4 me-md-2 fw-bold" style="background-color: #24AC7C;">About Sahil Pachlore</button>
+                     </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+                      <img class="rounded-lg-3" src="sahil.png" alt="" width="400" height="450" style="border-radius: 10px 5px 15px 15px  ;">
+                  </div>
+                </div>
+              </div>
+
+              <div class="container my-5">
+                <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+                  <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+                    <h1 class="display-4 fw-bold lh-1">Founder & CTO</h1>
+                    <h4 class=" ">Pawan Phadke</h4>
+                    <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+                     <a href="https://www.linkedin.com/in/pawan-phadake-a471441a4"> <button type="button" class="btn  btn-lg px-4 me-md-2 fw-bold" style="background-color: #24AC7C;">About Pawan Phadke</button>
+                     </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+                      <img class="rounded-lg-3" src="pawan.png" alt="" width="400" height="450" style="border-radius: 10px 5px 15px 15px  ;">
+                  </div>
+                </div>
+              </div>
+              <div class="container my-5">
+                <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+                  <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+                    <h1 class="display-4 fw-bold lh-1">Co-Founder & COO</h1>
+                    <h4 class=" ">Arittri Saha</h4>
+                    <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+                     <a href="https://www.linkedin.com/in/arittri-saha-18b7381a5"> <button type="button" class="btn  btn-lg px-4 me-md-2 fw-bold" style="background-color: #24AC7C;">About Arittri Saha</button>
+                     </a>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+                      <img class="rounded-lg-3" src="arru.png" alt="" width="400" height="450" style="border-radius: 10px 5px 15px 15px  ;">
+                  </div>
+                </div>
+              </div>
+
+
+
+      
+      
+        
+
+    
+      <hr>
+     
+        
+
+          <footer class="bd-footer py-5 mt-5 bg-light">
+            <div class="container py-5">
+              <div class="row">
+                <div class="col-lg-3 mb-3">
+                 
+                    <img src="icon.jpg" alt="" height="60" width="60">
+                  <a class="navbar-brand" href="#" style="font-weight: bolder;">ReZyme</a>
+             
+                  <ul class="list-unstyled small text-muted">
+                    <li class="mb-1">Designed and built with all the love in the world by the <a href="/docs/5.0/about/team/">Bootstrap team</a> with the help of <a href="https://github.com/twbs/bootstrap/graphs/contributors">our contributors</a>.</li>
+                    <li class="mb-2">Code licensed <a href="https://github.com/twbs/bootstrap/blob/main/LICENSE" target="_blank" rel="license noopener">MIT</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY 3.0</a>.</li>
+                    <li class="mb-2">Currently v5.0.2.</li>
+                  </ul>
+                </div>
+                <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+                  <h5>Company</h5>
+                  <ul class="list-unstyled">
+                    <li class="mb-2">Home</li>
+                    <li class="mb-2">Blog</li>
+                    <li class="mb-2">Contact us</li>
+                   
+                  </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                  <h5>Support</h5>
+                  <ul class="list-unstyled">
+                    <li class="mb-2">Help Center</li>
+                    <li class="mb-2">Guidelines</li>
+                    
+                  </ul>
+                </div>
+                <div class="col-6 col-lg-2 mb-3">
+                  <h5>Legal</h5>
+                  <ul class="list-unstyled">
+                    <li class="mb-2">Cookies Policy</li>
+                    <li class="mb-2">Privacy</li>
+                    <li class="mb-2">Terms of Servies</li>
+                   
+                  </ul>
+                </div>
+               
+                </div>
+              </div>
+            </div>
+          </footer>  
+          <hr style="font-weight: bold; color: #004720; background-color: blue;" size="7%" >
+         
+        <p style="text-align: center;color: #999999;">@2021 ReZyme All rights reserved</p>
+       
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
+
+
